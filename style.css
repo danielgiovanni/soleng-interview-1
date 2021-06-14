@@ -2,7 +2,10 @@ body {
   background-color: #191919;
   color: white;
   margin: 0;
+  font-family: 'Helvetica Neue';
 }
+
+/* HEADER */
 
 header {
   display: flex;
@@ -22,8 +25,13 @@ header {
   flex: 1;
 }
 
+.right-header {
+  justify-content: flex-end;
+}
+
 .center-header {
   flex: 2;
+  justify-content: center;
 }
 
 .left-header .logo img {
@@ -76,4 +84,58 @@ header {
   font-size: 1.7em;
   vertical-align: sub;
   margin-right: 10px;
+}
+
+/* MAIN */
+.wrapper {
+  display: flex;
+  padding: 30px 0;
+}
+
+#main {
+  flex: 2;
+  padding: 0 40px;
+}
+
+#main .video img {
+  width: 100%;
+}
+
+#main .tags {
+  color: #3ea6ff;
+  margin-top: 20px;
+}
+
+#main .title {
+  font-size: 2em;
+  margin-top: 5px;
+}
+
+#main .meta {
+  margin: 30px 0;
+  color: #909090 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main .meta .actions {
+  display: flex;
+  font-size: 1.2em;
+}
+
+#main .meta .actions div {
+  margin: 0 15px;
+}
+
+#main .meta .actions .fa {
+  font-size: 1.3em;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+#recommendation {
+  width: 30%;
+  background-color: rgb(129, 129, 129);
+  padding: 0 40px;
 }
