@@ -1,4 +1,79 @@
-h1,
-h2 {
-  font-family: Lato;
+body {
+  background-color: #191919;
+  color: white;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: #212121;
+  padding: 0 20px;
+}
+
+.left-header,
+.center-header,
+.right-header {
+  display: flex;
+  align-items: center;
+}
+
+.left-header,
+.right-header {
+  flex: 1;
+}
+
+.center-header {
+  flex: 2;
+}
+
+.left-header .logo img {
+  height: 80px;
+}
+
+.center-header .search {
+  display: flex;
+}
+
+.center-header .search input {
+  background-color: #121212;
+  color: #fff;
+  border: 1px solid #303030;
+  padding: 2px 12px;
+  width: 370px;
+  font-size: 1.1em;
+}
+
+.center-header .search button {
+  width: 65px;
+  cursor: pointer;
+  background-color: #323232;
+  color: #707070;
+  padding: 15px 0;
+  border: 0;
+  font-size: 1.1em;
+}
+
+.center-header .microphone {
+  font-size: 1.5em;
+  margin: 0 20px;
+}
+
+.right-header div {
+  font-size: 1.5em;
+  margin: 0 20px;
+}
+
+.right-header button {
+  background-color: #212121;
+  border: 1px solid #3ea6ff;
+  color: #3ea6ff;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  border-radius: 2px;
+}
+
+.right-header button i {
+  font-size: 1.7em;
+  vertical-align: sub;
+  margin-right: 10px;
 }
